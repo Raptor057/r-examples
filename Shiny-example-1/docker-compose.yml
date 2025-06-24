@@ -1,0 +1,7 @@
+services:
+  shiny-app:
+    build: .
+    container_name: shiny_penguins
+    ports:
+      - "3838:3838"
+    restart: unless-stopped
